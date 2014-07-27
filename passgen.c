@@ -58,7 +58,7 @@ int main(int argc,  char** args)
 	{
 		unsigned char c = 0;
 
-		while (chkvalid(c, validpass) == 0 || !chkvalid(c, buf)) // Trial/Error validity check for password/form safedness and repeating
+		while (chkvalid(c, validpass) == 0 || chkvalid(c, buf)) // Trial/Error validity check for password/form safedness and repeating
 			c = (unsigned char)(rand() % 176 + 33);
 
 		buf[j] = c;
