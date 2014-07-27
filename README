@@ -1,0 +1,3 @@
+Compile using gcc; example:
+
+gcc passgen.c -o passgen
